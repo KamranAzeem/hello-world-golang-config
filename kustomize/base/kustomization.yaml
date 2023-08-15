@@ -1,0 +1,15 @@
+resources:
+- deployment.yaml
+- service.yaml
+
+commonLabels:
+  app: hello-world-golang
+
+#~ commonAnnotations:
+  #~ app: mykustom-annontations
+
+#~ namePrefix:
+  #~ kustom-
+
+#~ nameSuffix:
+  #~ -v1
