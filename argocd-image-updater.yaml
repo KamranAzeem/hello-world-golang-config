@@ -3,10 +3,13 @@ kind: Application
 metadata:
   name: image-updater-hello-world-golang
   namespace: argocd
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
+  #~ finalizers:
+    #~ - resources-finalizer.argocd.argoproj.io
   annotations:
-    argocd-image-updater.argoproj.io/image-list: docker.io/kamranazeem/hello-world-golang:~1
+    argocd-image-updater.argoproj.io/image-list: hello-world-golang=docker.io/kamranazeem/hello-world-golang
+    argocd-image-updater.argoproj.io/hello-world-golang.update-strategy: semver
+    argocd-image-updater.argoproj.io/hello-world-golang.allow-tags: regexp:^1.0.0-[0-9a-zA-Z]+$
+    argocd-image-updater.argoproj.io/hello-world-golang.force-update: "true"
     argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd/github-credentials
     argocd-image-updater.argoproj.io/branch: master
 spec:
