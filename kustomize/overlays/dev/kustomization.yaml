@@ -1,7 +1,6 @@
-bases:
+resources:
 - ../../base
 
 patches:
- - replicas.yaml
-
+- path: ./replicas.yaml
 

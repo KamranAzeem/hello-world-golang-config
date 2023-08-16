@@ -2,17 +2,10 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello-world-golang
-  labels:
-    app: hello-world-golang
+
 spec:
   replicas: 1
-  selector:
-    matchLabels:
-      app: hello-world-golang
   template:
-    metadata:
-      labels:
-        app: hello-world-golang
     spec:
       containers:
       - name: hello-world-golang
