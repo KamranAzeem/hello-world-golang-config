@@ -6,7 +6,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
   annotations:
-    argocd-image-updater.argoproj.io/image-list: dockerhub.io/kamranazeem/hello-world-golang:~1
+    argocd-image-updater.argoproj.io/image-list: docker.io/kamranazeem/hello-world-golang:~1
     argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd/github-credentials
     argocd-image-updater.argoproj.io/branch: master
 spec:
