@@ -1,3 +1,0 @@
-kustomize:
-  images:
-  - docker.io/kamranazeem/hello-world-golang:1.0.3
