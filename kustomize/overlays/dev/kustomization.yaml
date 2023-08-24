@@ -4,3 +4,6 @@ resources:
 patches:
 - path: ./replicas.yaml
 
+configMapGenerator:
+- name: hello-world-golang
+  env: greeting
