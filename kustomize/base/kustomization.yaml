@@ -1,7 +1,7 @@
 resources:
 - deployment.yaml
 - service.yaml
-- configmap.yaml
+
 
 commonLabels:
   app: hello-world-golang
