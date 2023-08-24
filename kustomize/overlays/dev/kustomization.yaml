@@ -6,4 +6,5 @@ patches:
 
 configMapGenerator:
 - name: hello-world-golang
-  env: greeting
+  env: variables.configmap
+  
