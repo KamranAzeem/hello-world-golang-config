@@ -1,6 +1,7 @@
 resources:
 - deployment.yaml
 - service.yaml
+- configmap.yaml
 
 commonLabels:
   app: hello-world-golang
@@ -15,4 +16,3 @@ commonLabels:
   #~ -v1
 
 
-# Unable to create application: application spec for hello-world-golang is invalid: InvalidSpecError: Unable to generate manifests in kustomize/overlays/dev: rpc error: code = Unknown desc = `kustomize build .kustomize/overlays/dev` failed exit status 1: Error: invalid Kustomization: json: cannot unmarshal string into Go struct field Kustomization.patches of type types.Patch

@@ -19,3 +19,10 @@ spec:
         image: docker.io/kamranazeem/hello-world-golang:v1.0.0
         ports:
         - containerPort: 8080
+
+        env:
+          - name: GREETING
+            valueFrom:
+              configMapKeyRef:
+                name: hello-world-golang
+                key: greeting

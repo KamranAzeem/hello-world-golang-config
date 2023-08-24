@@ -6,7 +6,9 @@ metadata:
     app: hello-world-golang
 spec:
   ports:
-    - port: 8080
+    - protocol: TCP
+      port: 80
+      targetPort: 8080    
   selector:
     app: hello-world-golang
   type: ClusterIP

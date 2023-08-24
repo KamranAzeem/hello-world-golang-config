@@ -9,6 +9,13 @@ spec:
     spec:
       containers:
       - name: hello-world-golang
-        image: docker.io/kamranazeem/hello-world-golang:1.0.3
+        image: docker.io/kamranazeem/hello-world-golang
         ports:
         - containerPort: 8080
+
+        env:
+          - name: GREETING
+            valueFrom:
+              configMapKeyRef:
+                name: hello-world-golang
+                key: greeting
