@@ -4,4 +4,4 @@ metadata:
   name: hello-world-golang
 data:
   # property-like keys; each key maps to a simple value
-  greeting: "Howdy"
+  greeting: "Silly"
